@@ -4,18 +4,19 @@
   width: 100%;
   background: @nav-bg;
   display: flex;
-  font-family: @river-bend;
+  font-family: inherit;
+  color: @nav-font;
   margin: 0 auto;
   height: 90px;
-
+  border: @nav-border;
+  
   .nav-bar{
     width: 100%;
     max-width: 800px;
     .center();
-    // .test;
     margin: 0 auto; 
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 1.6rem;
     justify-content: space-between;
   }
 
@@ -27,10 +28,11 @@
   .nav{
     display: flex;
     justify-content: space-between;
+    margin:auto;
     a {
       margin: 0 1rem;
       text-decoration: none;
-      color: black;
+      color: @nav-font;
       white-space: nowrap;
     }
   }
